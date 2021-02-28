@@ -8,4 +8,4 @@ These pages provide the code and explanations of the research papers from the Sy
 
 ### More Information
 
-For More information about us, visit the group pages on [https://www.imperial.ac.uk/systems-algorithms-design-lab/](https://www.imperial.ac.uk/systems-algorithms-design-lab/){:target="_blank"}
+For more information about us, please visit the group pages on [https://www.imperial.ac.uk/systems-algorithms-design-lab/](https://www.imperial.ac.uk/systems-algorithms-design-lab/){:target="_blank"}
