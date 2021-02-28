@@ -4,12 +4,8 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+These pages provide the code and explanations of the research papers from the Systems and Algorithms Laboratory ([SysAL](https://www.imperial.ac.uk/ImperialSysAL/)) at Imperial College London.
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+For More information about us, visit the group pages on [https://www.imperial.ac.uk/systems-algorithms-design-lab/](https://www.imperial.ac.uk/systems-algorithms-design-lab/)
