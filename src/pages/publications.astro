@@ -1,0 +1,18 @@
+---
+import Base from '../layouts/Base.astro';
+import { publications } from '../data/site.js';
+const sortedPublications = publications; // Explicitly curated within each year.
+
+---
+<Base title="Publications">
+  <main class="wrap feature-index">
+    <div class="feature-index-intro"><span>PUBLICATIONS / SYSAL</span><h1>Publications</h1><p>Selected publications, with direct links to papers and associated project material.</p></div>
+    <div class="pub-list">
+      {sortedPublications.map(pub => <article class="pub-row">
+        <span class="pub-year">{pub.year}</span>
+        <div><h2>{pub.title}</h2><p>{pub.authors}</p><div class="pub-meta"><span>{pub.venue}</span>{pub.url && <a href={pub.url}>Paper ↗</a>}{pub.project && <a href={`/research/${pub.project}/`}>Project ↗</a>}{pub.projectUrl && <a href={pub.projectUrl}>Project ↗</a>}{pub.code && <a href={pub.code}>Code ↗</a>}{pub.dataset && <a href={pub.dataset}>Dataset ↗</a>}</div></div>
+      </article>)}
+    </div>
+    <p class="pub-contact-note">For enquiries about research data, code or other materials associated with our publications, please <a href="https://profiles.imperial.ac.uk/david.boyle">get in touch</a>.</p>
+  </main>
+</Base>

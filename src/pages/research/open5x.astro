@@ -1,0 +1,27 @@
+---
+import Base from '../../layouts/Base.astro';
+---
+<Base title="Open5x" description="Open5x and MM-Open5x: accessible five-axis 3D printing, conformal slicing and multi-material electronics.">
+<main class="wrap open5x-page open5x-lean">
+  <header class="open5x-intro">
+    <a class="back-link" href="/research/">← All research</a>
+    <div class="eyebrow">RESEARCH / DIGITAL FABRICATION</div>
+    <h1>Open5x</h1>
+    <p class="open5x-deck">Accessible five-axis 3D printing and conformal electronics.</p>
+    <p class="open5x-lead">Open5x adapts familiar desktop printing hardware for five-axis fabrication, with a Rhino/Grasshopper workflow for designing and generating curved-layer toolpaths. Subsequent work extends this approach towards multi-material printing of functional electronics on three-dimensional surfaces.</p>
+    <div class="feature-inline-links"><a href="https://freddiehong19.github.io/Open5x/">Original project ↗</a><a href="https://github.com/FreddieHong19/Open5x">Open5x source ↗</a><a href="https://github.com/BigKoala33/MM-Open5x">MM-Open5x source ↗</a></div>
+  </header>
+  <figure class="open5x-figure open5x-hero-figure"><img src="/research/open5x-chi-p4-fig2.png" alt="Original Open5x printer fabricating turbine and fan-shaped parts without supports"/><figcaption>Support-free turbine and fan prints, alongside the original five-axis fabrication process. Hong et al., CHI 2022, Fig. 4.</figcaption></figure>
+  <section class="open5x-story" aria-labelledby="open5x-how"><div class="open5x-index">01 / OPEN5X</div><div><h2 id="open5x-how">Five axes, on a desktop.</h2><p>A two-axis rotating gantry converts a Prusa i3 MK3S into a five-axis printer. An accompanying conformal slicer generates and simulates toolpaths within Rhino and Grasshopper. Together, the open hardware and software lower the barrier to curved-layer printing and support-free fabrication.</p></div></section>
+  <figure class="open5x-figure"><img src="/research/open5x-chi-p3-fig1.png" alt="Original Open5x printer conversion and exploded rotating gantry design" loading="lazy"/><figcaption>Printer conversion and rotating gantry. Hong et al., CHI 2022, Fig. 1.</figcaption></figure>
+  <section class="open5x-story" aria-labelledby="open5x-next"><div class="open5x-index">02 / MM-OPEN5X</div><div><h2 id="open5x-next">From curved layers to functional electronics.</h2><p>Open5x demonstrated conductive traces on curved substrates. Later work investigated multi-material, five-axis fabrication of electrical traces; MM-Open5x extends the workflow to examples including conformal antennas and a switching regulator.</p><div class="feature-inline-links"><a href="https://doi.org/10.1016/j.addma.2023.103546">Curved electrical traces · Paper ↗</a><a href="https://github.com/BigKoala33/MM-Open5x">MM-Open5x · Repository ↗</a></div></div></section>
+  <figure class="open5x-figure"><img src="/research/mm-open5x-original.png" alt="MM-Open5x research figure illustrating multi-material conformal fabrication" loading="lazy"/><figcaption>MM-Open5x: later multi-material conformal fabrication research.</figcaption></figure>
+  <section class="open5x-resources"><h2>Selected resources</h2><div>
+    <a href="https://doi.org/10.1145/3491101.3519782">Open5x: Accessible 5-axis 3D printing and conformal slicing <span>CHI Extended Abstracts · 2022 ↗</span></a>
+    <a href="https://doi.org/10.1016/j.addma.2023.103546">5-axis multi-material 3D printing of curved electrical traces <span>Additive Manufacturing · 2023 ↗</span></a>
+    <a href="https://freddiehong19.github.io/Open5x/">Open5x project website <span>Demonstrations and further documentation ↗</span></a>
+    <a href="https://github.com/FreddieHong19/Open5x">Open5x GitHub <span>Hardware, firmware and slicing tools ↗</span></a>
+    <a href="https://github.com/BigKoala33/MM-Open5x">MM-Open5x GitHub <span>Multi-material fabrication examples ↗</span></a>
+  </div></section>
+</main>
+</Base>

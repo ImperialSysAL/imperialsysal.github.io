@@ -1,0 +1,42 @@
+---
+import '../styles/global.css';
+import { lab } from '../data/site.js';
+const { title = lab.fullName, description = lab.description } = Astro.props;
+const current = Astro.url.pathname;
+const nav = [ ['Research','/research/'], ['People','/people/'], ['Publications','/publications/'], ['Join Us','/join/'] ];
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#f7f6f2" />
+    <title>{current === "/" ? "SysAL" : `SysAL - ${title}`}</title>
+    <link rel="icon" type="image/svg+xml" sizes="any" href="/imperial-i.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/imperial-i-32.png" />
+    <link rel="shortcut icon" href="/favicon.ico?v=20" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/imperial-i-180.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <a class="skip-link" href="#content">Skip to content</a>
+    <header class="site-header">
+      <div class="header-inner wrap">
+        <a class="wordmark" href="/" aria-label="SysAL home">Sys<span class="wordmark-accent">A</span>L<span class="wordmark-dot">.</span></a>
+        <nav class="main-nav" aria-label="Main navigation">
+          {nav.map(([label, href]) => <a href={href} aria-current={current.startsWith(href) ? 'page' : undefined}>{label}</a>)}
+        </nav>
+      </div>
+    </header>
+    <main id="content"><slot /></main>
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <div><strong>SysAL</strong><span>Systems & Algorithms Laboratory</span><span>Imperial College London</span></div>
+        <div class="footer-right"><span>© 2026 SysAL · Imperial College London</span></div>
+      </div>
+    </footer>
+  </body>
+</html>
